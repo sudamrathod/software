@@ -168,6 +168,10 @@ doctype_js = {"Item" : "public/item.js"}
 # override_whitelisted_methods = {
 # 	"frappe.desk.doctype.event.event.get_events": "software.event.get_events"
 # }
+
+override_whitelisted_methods = {
+	"erpnext.stock.get_item_details.get_item_details":"software.software.Custom_Script.purchase_order.purchase_order.custom_get_item_details"
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
